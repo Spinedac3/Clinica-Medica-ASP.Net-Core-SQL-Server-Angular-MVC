@@ -1,0 +1,49 @@
+<br>
+<div class="container">
+    <div class='card'>
+        <div class='card-header'>
+            <h4>{{pageTitle}}</h4>
+        </div>
+        <div class='card-body'>
+            <div class='row'>
+                    <div class='col-md-1'>Buscar:</div>
+                    <div class='col-md-4'>
+                      <input type='text'
+                             [(ngModel)]='listFilter' />
+                    </div>
+            </div>
+        </div>
+   <div class='table-responsive'>
+     <table class='table'
+            *ngIf='pacientes && pacientes.length'>
+       <thead class="bg-light" >
+         <tr>
+           <th>Nombres</th>
+           <th>Apellidos</th>
+           <th>Edad</th>
+           <th>DPI</th>
+         </tr>
+       </thead>
+       <tbody>
+         <tr *ngFor='let paciente of filteredPacientes'>
+           <td> <a [routerLink]="['/datosGenerales',paciente.id]">{{ paciente.nombre}}</a></td>
+           <td>{{ paciente.apellido }}</td>
+           <td>{{ paciente.edad }}</td>
+           <td>{{ paciente.dpi}}</td>
+          
+         </tr>
+       </tbody>
+     </table>
+   </div>
+   <div class="card-footer">
+       <div class="col-md-3 offset-md-9 text-right">
+        <button class="btn btn-primary" [routerLink]="['/crearPaciente']">Crear Paciente</button>
+       </div>
+   </div>
+ </div>
+</div>
+
+<div *ngIf='errorMessage'
+    class='alert alert-danger'>
+ Error: {{ errorMessage }}
+</div>

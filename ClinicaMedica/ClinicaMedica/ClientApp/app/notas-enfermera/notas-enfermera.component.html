@@ -1,0 +1,46 @@
+<br>
+<div class="container">
+    <div class='card'>
+        <div class='card-header'>
+            <h4>{{pageTitle}}</h4>
+        </div>
+        <div class='card-body'>
+            <div class='row'>
+                    <div class='col-md-1'>Buscar:</div>
+                    <div class='col-md-4'>
+                      <input type='text'
+                             [(ngModel)]='listFilter' />
+                    </div>
+            </div>
+        </div>
+   <div class='table-responsive'>
+     <table class='table'
+            *ngIf='notas && notas.length'>
+       <thead class="bg-light" >
+         <tr>
+           <th>Id Paciente</th>
+           <th>Fecha de Creacion</th>
+           <th>Id Paciente</th>
+         </tr>
+       </thead>
+       <tbody>
+         <tr *ngFor='let nota of filteredNotas'>
+           <td> <a [routerLink]="['/notas', nota.id]">{{ nota.pacienteId}}</a></td>
+           <td>{{ nota.fecharegistro }}</td>
+           <td>{{ nota.observaciones}}</td>
+          
+         </tr>
+       </tbody>
+     </table>
+   </div>
+   <div class="card-footer">
+       <div class="col-md-3 offset-md-9 text-right">
+        <button class="btn btn-primary" [routerLink]="['/crearNota']">Crear Nota</button>
+       </div>
+   </div>
+ </div>
+</div>
+<div *ngIf='errorMessage'
+    class='alert alert-danger'>
+ Error: {{ errorMessage }}
+</div>

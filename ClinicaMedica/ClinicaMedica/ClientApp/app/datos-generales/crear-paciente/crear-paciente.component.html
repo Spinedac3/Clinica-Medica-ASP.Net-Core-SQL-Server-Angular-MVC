@@ -1,0 +1,97 @@
+<br>
+<div class="container">
+    <div class='card'>
+        <div class='card-header'>
+            <h4>{{pageTitle}}</h4>
+        </div>
+  
+        <div class='card-body'>
+                <div class='row'>
+                    <div class="col-md-2 text-right">
+                            <i class="fa fa-user fa-5x" aria-hidden="true"></i>
+                    </div>
+                    <div class='col-md-10'>
+                        <div class='row'>
+                            <div class='col-md-3 text-left form-group'>Nombres: </div>
+                            <div class='col-md-4 text-left '>
+                                <input type="text" class="form-control" [(ngModel)]='nombre' />
+                                <label> </label>
+                            </div>
+                        </div>
+                        <div class='row'>
+                            <div class='col-md-3 text-left form-group'>Apellidos:</div>
+                            <div class='col-md-4 text-left'>
+                                <input type="text" class="form-control" [(ngModel)]='apellido' />
+                            </div>
+                        </div>
+                        <div class='row'>
+                            <div class='col-md-3 text-left form-group'>DPI:</div>
+                            <div class='col-md-4'>
+                                <input type="number" min="1" class="form-control" [(ngModel)]='dpi' />
+                            </div>
+                        </div>
+                        <div class='row'>
+                            <div class='col-md-3 text-left form-group'>Fecha Nacimiento:</div>
+                            <div class='col-md-4 text-left'>
+                                <input type="date" class="form-control" [(ngModel)]='fechaNacimiento' />
+                            </div>
+                        </div>
+                        <div class='row'>
+                            <div class='col-md-3 text-left'>Edad:</div>
+                            <div class='col-md-4 text-left'>
+                                <input type="number" class="form-control" [(ngModel)]='edad' />
+                            </div>
+                        </div>
+                        <div class='row'>
+                            <div class='col-md-3 text-left form-group'>Sexo:</div>
+                            <div class='col-md-4 text-left'>
+                                <input type="text" class="form-control" [(ngModel)]='sexo' />
+                            </div>
+                        </div>
+                        <div class='row'>
+                            <div class='col-md-3  text-left form-group'>Profesion:</div>
+                            <div class='col-md-4 text-left'>
+                                <input type="text" class="form-control" [(ngModel)]='profesion' />
+                            </div>
+                        </div>
+                        <div class='row'>
+                            <div class='col-md-3 text-left form-group'>Dirección:</div>
+                            <div class='col-md-4 text-left'>
+                                <input type="text" class="form-control" [(ngModel)]='direccion' />
+                            </div>
+                        </div>
+                        <div class='row'>
+                            <div class='col-md-3 text-left form-group'>Contacto Emergencia:</div>
+                            <div class='col-md-4 text-left'>
+                                <input type="number" class="form-control" [(ngModel)]='contactoEmergencia' />
+                            </div>
+                        </div>
+                        <div class='row'>
+                            <div class='col-md-3 text-left form-group'>Telefono Contacto:</div>
+                            <div class='col-md-4 text-left'>
+                                <input type="number" class="form-control" [(ngModel)]='telefenoContacto' />
+                            </div>
+                        </div>
+                        <div class='row'>
+                            <div class='col-md-3 text-left form-group'>Parentesco Contacto:</div>
+                            <div class='col-md-4 text-left'>
+                                <input type="number" class="form-control" [(ngModel)]='parentescocontacto' />
+                            </div>
+                        </div>
+                        <div class='row'>
+                            <div class='col-md-3 text-left form-group'>Enfermera Id:</div>
+                            <div class='col-md-4 text-left'>
+                                <p-dropdown [options]="enfermeras" [(ngModel)]="selectedEnfermera" placeholder="Seleccione Enfmera" optionLabel="name" [showClear]="true"></p-dropdown>
+                            </div>
+                        </div>
+                        <br>
+                        <div class='row'>
+                            <div class="col-md-3 offset-md-9">
+                                <button class="btn btn-primary" (click)="crearPaciente()">Crear</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+    </div>
+</div>

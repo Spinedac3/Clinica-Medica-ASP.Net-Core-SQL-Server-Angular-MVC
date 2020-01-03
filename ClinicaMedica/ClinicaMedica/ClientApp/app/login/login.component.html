@@ -1,0 +1,27 @@
+<br>
+<div class="card card-body col-md-6 offset-md-3 text-center">
+    <div *ngIf="errorMessage" class="alert alert-warning">{{ errorMessage }}</div>
+    <h2>Iniciar Sesion</h2><br>
+    <form (submit)="onLogin()"  #theForm="ngForm" novalidate>
+    <div class="form-group row">
+        <label class="col-3 col-form-label">Usuario: </label>
+        <div class="col-9">
+            <input type="text" class="form-control" name="username" [(ngModel)]="creds.username" #username="ngModel" required />
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-3 col-form-label">Contraseña: </label>
+        <div class="col-9">
+            <input type="password" class="form-control" name="password" [(ngModel)]="creds.password" required #password="ngModel" />
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <div class="col-4"></div>
+        <div class="col-4 offset-md-3">
+            <button type="submit" class="btn btn-info" value="Login" [disabled]="theForm.invalid">Iniciar Sesion</button>
+        </div>
+
+    </div>
+    </form>
+</div>

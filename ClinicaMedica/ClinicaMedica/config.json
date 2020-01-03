@@ -1,0 +1,10 @@
+{
+  "ConnectionStrings": {
+    "ConnectionString": "server=NDTICGSERRANO;Database=ClinicaMedicaDb;Integrated Security=true;MultipleActiveResultSets=true;"
+  },
+  "Tokens": {
+    "key": "qwienoqidniqnwdoiqwoidqio11",
+    "Issuer": "http://localhost:8888",
+    "Audience": "users"
+  }
+}

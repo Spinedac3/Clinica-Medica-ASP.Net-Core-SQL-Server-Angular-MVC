@@ -1,0 +1,29 @@
+[
+	{
+		"idPaciente": 1,
+		"nombres": "Guilmar Rolivel",
+		"Apellidos": "Serrano Alonzo",
+		"Edad": 35,
+		"DPI": "1231-12132-0101",
+		"fechaNacimiento": "12/12/1998",
+		"DatosGenerales": "jefecito"
+	},
+	{
+		"idPaciente": 2,
+		"nombres": "Wilson Estuardo",
+		"Apellidos": "Serrano Alonzo",
+		"Edad": 56,
+		"DPI": "1231-12132-0101",
+		"fechaNacimiento": "12/12/1980",
+		"DatosGenerales": "pepa"
+	},
+	{
+		"idPaciente": 3,
+		"nombres": "Wilson Inocente",
+		"Apellidos": "Cumez Alonzo",
+		"Edad": 65,
+		"DPI": "1231-12132-0101",
+	    "fechaNacimiento": "12/12/1980",
+		"DatosGenerales": "cruza"
+	}
+]

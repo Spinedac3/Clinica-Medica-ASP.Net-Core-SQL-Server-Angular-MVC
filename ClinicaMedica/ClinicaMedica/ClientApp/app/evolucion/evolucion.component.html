@@ -1,0 +1,47 @@
+<br>
+<div class="container">
+    <div class='card'>
+        <div class='card-header'>
+            <h4>{{pageTitle}}</h4>
+        </div>
+        <div class='card-body'>
+            <div class='row'>
+                    <div class='col-md-1'>Buscar:</div>
+                    <div class='col-md-4'>
+                      <input type='text'
+                             [(ngModel)]='listFilter' />
+                    </div>
+            </div>
+        </div>
+   <div class='table-responsive'>
+     <table class='table'
+            *ngIf='evoluciones && evoluciones.length'>
+       <thead class="bg-light" >
+         <tr>
+           <th>Nombre Paciente</th>
+           <th>Sexo</th>
+           <th>Edad</th>
+         </tr>
+       </thead>
+       <tbody>
+         <tr *ngFor='let evolucion of filteredEvo'>
+           <td> <a [routerLink]="['/evoluciones', evolucion.id]">{{ evolucion.pacienteId}} {{evolucion.Apellidos}}</a></td>
+           <td>{{ evolucion.resultadolab }}</td>
+           <td>{{ evolucion.analisis }}</td>
+          
+         </tr>
+       </tbody>
+     </table>
+   </div>
+   <div class="card-footer">
+       <div class="col-md-3 offset-md-9 text-right">
+        <button class="btn btn-primary" [routerLink]="['/crearEvolucion']">Crear Laboratorio</button>
+       </div>
+   </div>
+ </div>
+</div>
+<div *ngIf='errorMessage'
+    class='alert alert-danger'>
+ Error: {{ errorMessage }}
+</div>
+

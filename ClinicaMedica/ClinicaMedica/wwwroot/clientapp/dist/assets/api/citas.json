@@ -1,0 +1,32 @@
+[
+	{
+	    "idCita": 1,
+		"idPaciente": 1,
+		"nombres": "Guilmar Rolivel",
+		"Apellidos": "Serrano Alonzo",
+		"fechaCita": "12/12/2018",
+		"Hora": 12.15,
+		"DoctorAsignado": "Wilson Luna",
+		"Observaciones": "se veia bien"
+	},
+	{
+	    "idCita": 2,
+		"idPaciente": 2,
+		"nombres": "Wilson Estuardo",
+		"Apellidos": "Serrano Alonzo",
+		"fechaCita": "12/09/2018",
+		"Hora": 12.15,
+		"DoctorAsignado": "Mario Cumez",
+		"Observaciones": "se veia raro"
+	},
+	{
+	    "idCita": 3,
+		"idPaciente": 3,
+		"nombres": "Wilson Inocente",
+		"Apellidos": "Cumez Alonzo",
+		"fechaCita": "12/12/2018",
+		"Hora": 12.15,
+		"DoctorAsignado": "Wilson Luna",
+		"Observaciones": "era una quimera"
+	}
+]

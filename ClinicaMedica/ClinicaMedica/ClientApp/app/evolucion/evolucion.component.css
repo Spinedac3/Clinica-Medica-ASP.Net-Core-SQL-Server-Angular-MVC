@@ -1,0 +1,12 @@
+.container {
+    padding: 40px;
+
+}
+
+table {
+    text-align: center;
+}
+
+.card {
+    border: solid 1px black;
+}

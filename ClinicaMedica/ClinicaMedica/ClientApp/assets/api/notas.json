@@ -1,0 +1,32 @@
+[
+	{
+	    "idNota": 1,
+		"idPaciente": 1,
+		"nombres": "Guilmar Rolivel",
+		"Apellidos": "Serrano Alonzo",
+		"fechaNacimiento": "12/12/1998",
+		"fecha": "12/12/2018",
+		"EstadoFisico": "Bueno",
+		"SignosVitales": "Estables"
+	},
+	{
+	    "idNota": 2,
+		"idPaciente": 2,
+		"nombres": "Wilson Estuardo",
+		"Apellidos": "Serrano Alonzo",
+		"fechaNacimiento": "12/12/1998",
+		"fecha": "12/12/2018",
+		"EstadoFisico": "Regular",
+		"SignosVitales": "Estables"
+	},
+	{
+	    "idNota": 3,
+		"idPaciente": 3,
+		"nombres": "Wilson Inocente",
+		"Apellidos": "Cumez Alonzo",
+		"fechaNacimiento": "12/12/1998",
+		"fecha": "12/12/2018",
+		"EstadoFisico": "Malo",
+		"SignosVitales": "Estables"
+	}
+]

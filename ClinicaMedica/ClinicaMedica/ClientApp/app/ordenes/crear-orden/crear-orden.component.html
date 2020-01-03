@@ -1,0 +1,50 @@
+<br>
+<div class="container">
+    <div class='card'>
+        <div class='card-header'>
+            <h4>{{pageTitle}}</h4>
+        </div>
+  
+        <div class='card-body'>
+                <div class='row'>
+                    <div class="col-md-2 text-right">
+                            <i class="fa fa-user fa-5x" aria-hidden="true"></i>
+                    </div>
+                  <div class='col-md-10'>
+                    <div class='row'>
+                      <div class='col-md-2 text-right form-group'>ID Paciente:    </div>
+                      <div class='col-md-4'>
+                          <input type="number" class="form-control" [(ngModel)]="pacienteId"/>
+                        </div>
+                    </div>
+                    <div class='row'>
+                      <div class='col-md-2 text-right form-group'>Medicamento:</div>
+                      <div class='col-md-4'>
+                          <p-dropdown [options]="options" [(ngModel)]="selectedOption" editable="true" placeholder="Seleccione Metodo"></p-dropdown>
+                      </div>
+                    </div>
+                    <div class='row'>
+                      <div class='col-md-2 text-right form-group'>Dosis:</div>
+                      <div class='col-md-4'>
+                            <input type="text" min="1" class="form-control"  [(ngModel)]="dosis" />
+                      </div>
+                    </div>
+                    <div class='row'>
+                      <div class='col-md-2 text-right form-group'>Observaciones:</div>
+                      <div class='col-md-4'>
+                            <textarea type="number" class="form-control"[(ngModel)]="observaciones" > </textarea>
+                      </div>
+                    </div>
+                    
+                    <br>
+                    <div class='row'>
+                        <div class="col-md-3 offset-md-9">
+                           <button class="btn btn-primary"  (click)="crearOrden()">Crear</button>
+                        </div>
+                        </div>
+                  </div>
+                </div>
+              </div>
+    </div>
+</div>
+

@@ -1,0 +1,40 @@
+[
+	{
+		"idLaboratorio": 1,
+		"idPaciente": 1,
+		"nombres": "Guilmar Rolivel",
+		"Apellidos": "Serrano Alonzo",
+		"Edad": 35,
+		"Sexo": "Masculino",
+		"fechaNacimiento": "12/12/1998",
+		"Profesion": "jefecito",
+		"TipoLaboratorio": "N/A",
+		"Resultado": "N/A"
+	},
+	{
+		"idLaboratorio": 2,
+		"idPaciente": 2,
+		"nombres": "Wilson Estuardo",
+		"Apellidos": "Serrano Alonzo",
+		"Edad": 56,
+		"Sexo": "Masculino",
+		"fechaNacimiento": "12/12/1980",
+		"Profesion": "pepa",
+		"TipoLaboratorio": "N/A",
+		"Resultado": "N/A"
+		
+	},
+	{
+		"idLaboratorion": 3,
+		"idPaciente": 3,
+		"nombres": "Wilson Inocente",
+		"Apellidos": "Cumez Alonzo",
+		"Edad": 65,
+		"Sexo": "Masculino",
+	    "fechaNacimiento": "12/12/1980",
+		"Profesion": "cruza",
+		"TipoLaboratorio": "N/A",
+		"Resultado": "N/A"
+		
+	}
+]
